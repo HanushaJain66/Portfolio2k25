@@ -37,12 +37,13 @@ const Navbar = () => {
         {/* Sidebar */}
         <div className='sidebar'>
           <ul>
-            <li><a href="#home" className='nav'>Home</a></li>
-            <li><a href="#about" className='nav'>About</a></li>
-            <li><a href="#education" className='nav'>Education</a></li>
-            <li><a href="#project" className='nav'>Project</a></li>
-            <li><a href="#skills" className='nav'>Skills</a></li>
-            <li><a href="#contact" className='nav'>Contact</a></li>
+          <li><a href="#home" className='nav'>Home</a></li>
+              <li><a href="#about" className='nav'>About</a></li>
+              <li><a href="#education" className='nav'>Education</a></li>
+              <li><a href="#project" className='nav'>Project</a></li>
+              <li><a href="#skills" className='nav'>Skills</a></li>
+              <li><a href="#achivements" className='nav'>Achivements</a></li>
+              <li><a href="#contact" className='nav'>Contact</a></li>
           </ul>
         </div>
 
