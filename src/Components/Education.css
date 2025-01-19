@@ -81,8 +81,12 @@
     transform: translateY(-5px);
   }
 
+  .myeducation h2 {
+    font-size: 40px; /* Decrease font size for headings */
+  }
+
   .university .degree h4 {
-    font-size: 24px; /* Decrease font size for headings */
+    font-size: 24px; /* Decrease font size for degree headings */
   }
 
   .university p {

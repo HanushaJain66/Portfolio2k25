@@ -119,6 +119,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .sidebar{
+    width: 100px;
+  }
   .header {
     padding: 10px 5%;
   }

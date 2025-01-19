@@ -68,6 +68,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .project-heading {
+    font-size: 24px;
+    margin-top: 60px;
+  }
   .project-container{
     display: flex;
     flex-direction: column;
@@ -75,8 +79,21 @@
     justify-content: center;
   }
   .project{
-    width: 300px;
-    margin: 3px;
-    padding: 3px;
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .project-info {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .Technologies {
+    margin-top: 6px;
+  }
+  .Technologies span {
+    font-size: 18px;
+  }
+  .project a i {
+    font-size: 36px;
   }
 }
