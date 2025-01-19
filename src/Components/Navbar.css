@@ -126,8 +126,8 @@
     font-size: 20px;
   }
   .navbar a {
-    font-size: 20px;
-    margin-left: 20px;
+    font-size: 18px; /* Adjusted font size */
+    margin-left: 15px; /* Adjusted margin */
   }
   .Hamburger-menu {
     font-size: 25px;
