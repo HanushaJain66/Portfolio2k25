@@ -1,0 +1,104 @@
+/* skills.css */
+
+.skills-container {
+  text-align: center;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.skills-heading {
+  font-size: 60px;
+  color: #ededed;
+  margin-bottom: 30px;
+}
+
+.skills-heading span {
+  color: #0ef; /* Accent color */
+}
+
+.skills-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.skills-buttons button {
+  background: transparent;
+  border: 2px solid #ededed;
+  color: #ededed;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.skills-buttons button.active {
+  background: #0ef;
+  color: #000;
+  border-color: #0ef;
+}
+
+.skills-buttons button:hover {
+  background: #0ef;
+  color: #000;
+}
+
+.skills-slider {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #081b25;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b87f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #0ef;
+  margin: 30px 0 15px; /* Added top margin */
+  padding-top: 10px; /* Added top padding */
+}
+
+
+.skill-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ededed;
+  text-align: left;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-heading {
+    font-size: 40px;
+  }
+
+  .skills-buttons button {
+    font-size: 16px;
+  }
+
+  .skill-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+  }
+
+  .skill-name {
+    font-size: 16px;
+  }
+}

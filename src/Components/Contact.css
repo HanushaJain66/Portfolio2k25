@@ -1,0 +1,259 @@
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    /* margin-top: 30px; */
+    /* padding: 0px; */
+  }
+  
+  .contact-text h2{
+    font-size: 100px; /* Increased font size */
+    line-height: 1;
+    /* text-align: center; */
+  }
+  
+  .contact-text h2 span{
+    color: #0ef;
+  
+  }
+  
+  .contact-text h4{
+    margin: 15px 0;
+    color: rgb(220, 228, 228);
+    /* text-align: center; */
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .contact-text p{
+    color: rgb(177, 177, 177);
+    font-size: 20px;
+    /* text-align: center; */
+    line-height: 30px;
+    margin-bottom: 2rem;
+  }
+  
+  /* .contact-list{
+    margin-bottom: 3rem;
+  } */
+  
+  /* .contact-list li{
+    margin-bottom: 100px;
+  } */
+  .contact-list i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .4s ease;
+  }
+  
+  .contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #0ef;
+  
+  }
+  
+  .contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 2s;
+  }
+  
+  .contact-icons i:hover{
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+  }
+  
+  .contact-form{
+    margin-top: 4%; /* Reduce top margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the form */
+  }
+  .contact-form form{
+    position: relative;
+    margin-top: 50px; /* Reduce top margin */
+    width: 100%; /* Ensure form takes full width */
+    max-width: 600px; /* Set a max-width for better alignment */
+  }
+  
+  .contact-form form input,form textarea{
+    border: none;
+    /* background: transparent; */
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #0ef;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .contact-form textarea{
+    resize: none;
+    height: 220px;
+  }
+  
+  .contact-form form .send{
+    display: inline-block;
+    padding: 12px 60px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,0 0 25px #0ef;
+  }
+  .contact-form h4{
+    display: none;
+  }
+
+  .connection{
+    font-size: 70px;
+  }
+
+
+  /* Desktop styles remain the same */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 100px;
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    padding-left: 0; 
+  }
+
+  .contact-text h2 {
+    font-size: 170px; /* Increased font size for mobile */
+    text-align: center; 
+  }
+
+  .contact-text h4 {
+    font-size: 16px; 
+    text-align: center; 
+  }
+  .contact-form h4{
+    display: inline;
+    text-align: center;
+    align-self: center;
+    font-size: 25px;
+    margin: 0 0 0 0;
+    text-decoration: dotted;
+
+  }
+
+  .contact-text p {
+    font-size: 16px; /* Decrease font size */
+    text-align: center; /* Center align for better readability */
+  }
+
+  .contact-list i {
+    font-size: 16px; /* Decrease font size */
+  }
+
+  .contact-icons i {
+    margin: 15px 10px; /* Adjust margin for icons */
+  }
+
+  .contact-form form {
+    margin-top: 50px; /* Adjust top margin */
+  }
+
+  .contact-form form input,
+  .contact-form textarea {
+    width: 100%; /* Make inputs and textarea full width */
+  }
+}
+
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .contact {
+    margin-top: 80px;
+    grid-template-columns: 1fr 1fr; /* Display two columns for desktop */
+    gap: 3rem;
+    padding-left: 30px;
+    padding-right: 30px; /* Add padding to the right for better alignment */
+  }
+
+  .contact-text {
+    padding-right: 15px; /* Adjust padding for better alignment */
+  }
+
+  .contact-text h2 {
+    font-size: 60px; /* Adjust font size for desktop */
+    text-align: left; /* Align text to the left for better readability */
+  }
+
+  .contact-text h4 {
+    font-size: 18px; /* Adjust font size */
+    text-align: left; /* Align text to the left */
+  }
+
+  .contact-text p {
+    font-size: 16px; /* Adjust font size */
+    text-align: left; /* Align text to the left */
+    line-height: 1.6; /* Increase line height for better readability */
+  }
+
+  .contact-form {
+    margin-top: 120px; /* Adjust top margin */
+  }
+
+  .contact-form form {
+    margin-top: 0; /* Remove extra top margin */
+  }
+
+  .contact-form form input,
+  .contact-form textarea {
+    width: 100%; /* Make inputs and textarea full width */
+    margin-bottom: 20px; /* Adjust margin for better spacing */
+  }
+
+  .contact-form textarea {
+    height: 180px; /* Adjust textarea height */
+  }
+
+  .contact-form form .send {
+    padding: 12px 40px; /* Adjust padding */
+  }
+
+  .contact-list {
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  .contact-list li {
+    margin-bottom: 12px; /* Adjust margin between list items */
+  }
+
+  .contact-icons i {
+    margin: 20px 15px 20px 0; /* Adjust margin for icons */
+    opacity: 1; /* Ensure icons are visible */
+  }
+}
+
+

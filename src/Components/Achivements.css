@@ -1,0 +1,70 @@
+/* Achivements.css */
+
+.achievements-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .achievements-heading {
+    font-size: 60px; /* Same as Education section heading */
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 30px; /* Spacing below the heading */
+    color: #ededed; /* Matches theme color */
+  }
+  
+  .achievements-heading span {
+    color: #0ef; /* Accent color for the heading */
+  }
+  
+  .central-line {
+    position: absolute;
+    width: 5px;
+    background-color: #ededed;
+    height: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin-top: 180px;
+  }
+  
+  .achievement {
+    position: relative;
+    margin: 20px 0;
+    padding: 0; /* Remove padding for plain text appearance */
+    font-size: 29px; /* Matches degree heading size */
+    color: #ededed; /* Matches theme text color */
+    font-weight: 600; /* Makes text more prominent */
+    width: 45%;
+    z-index: 2;
+  }
+  
+  .achievement.left {
+    align-self: flex-start;
+    text-align: right;
+  }
+  
+  .achievement.right {
+    align-self: flex-end;
+    text-align: left;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .achievement {
+      width: 80%; /* Adjust width for smaller screens */
+      text-align: center; /* Center align for better readability */
+    }
+    .achievement.left, .achievement.right {
+      align-self: center; /* Center both sides */
+    }
+  
+    .achievements-heading {
+      font-size: 40px; /* Decrease heading font size for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,101 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #051129;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }
+  .navbar ul li{
+    display: inline-block;
+  }
+  
+  .navbar a{
+   
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .2s ease forwards;
+  }
+  
+  
+  .navbar a:hover{
+    color: #0ef;
+  }
+
+
+  /* @media screen and (width<1000px){
+    .nav{
+        display: none;
+    }
+    
+  }
+
+  @media screen and (width>=1000px) {
+    .Hamburger-menu{
+        display: none;
+        margin-bottom: 2px;
+    }
+
+} */
+
+.Hamburger-menu{
+  color: rgb(36, 205, 218);
+  font-size: 30px;
+  text-decoration: none;
+  
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #051129;
+  transition: left 0.3s ease;
+  z-index: 99;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 30;
+  margin: 50px 0 0 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #0ef;
+}
+
+.show-sidebar {
+  left: 0;
+}

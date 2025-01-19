@@ -1,0 +1,91 @@
+/* Previous theme styles here... */
+
+/* Education section */
+.education {
+  margin-top: 120px;
+}
+
+.myeducation h2 {
+  font-size: 60px;
+  text-align: center;
+  padding: 2px;
+  margin-bottom: 3px;
+  color: #ededed; /* Matched with theme */
+}
+
+.myeducation h2 span {
+  color: #0ef;
+}
+
+
+.info-education {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 27px;
+  margin: 14px;
+}
+
+.university {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 20px #012290f7,1px 1px 40px #0053b87f; /* Added box shadow */
+  transition: box-shadow 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.university:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px); 
+}
+
+.university .degree h4 {
+  font-size: 29px;
+  font-weight: 600;
+  color: #ededed; 
+}
+
+.university p {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.year {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .info-education {
+    grid-template-columns: 1fr; 
+  }
+
+  .university {
+    flex-direction: column; 
+    align-items: flex-start;
+    
+  }
+  .degree{
+    align-items: flex-start;
+  }
+  .year{
+    align-items: flex-start;
+  }
+
+  .university:hover {
+    box-shadow: none; 
+    transform: translateY(-5px);
+  }
+
+  .university .degree h4 {
+    font-size: 24px; /* Decrease font size for headings */
+  }
+
+  .university p {
+    font-size: 16px; /* Decrease font size for content */
+  }
+}
