@@ -681,7 +681,7 @@ body
 
   .Technical-bars .bar {
     margin-top: 30px;
-    text-align: center; /* Center align text */
+    
   }
 
   /* Reduce font size for span elements */
@@ -708,6 +708,10 @@ body
 }
 
 @media (max-width: 768px) {
+  *{
+    align-items: center;
+    margin-left: 0.6rem;
+  }
   #professional-skills {
     margin-top: 370px;
   }
