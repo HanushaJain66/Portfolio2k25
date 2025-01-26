@@ -710,8 +710,7 @@ body
 @media (max-width: 768px) {
   *{
     align-items: center;
-    margin-left: 0.6rem;
-    /* font-size: medium; */
+    margin-left: 0.5rem;
   }
   #professional-skills {
     margin-top: 370px;
