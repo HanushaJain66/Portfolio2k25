@@ -711,6 +711,7 @@ body
   *{
     align-items: center;
     margin-left: 0.6rem;
+    font-size: medium;
   }
   #professional-skills {
     margin-top: 370px;
