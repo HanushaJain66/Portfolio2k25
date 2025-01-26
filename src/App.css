@@ -681,6 +681,7 @@ body
 
   .Technical-bars .bar {
     margin-top: 30px;
+    text-align: center; /* Center align text */
   }
 
   /* Reduce font size for span elements */
@@ -697,6 +698,7 @@ body
   .radial-bars .radial-bar {
     width: 100%;
     margin-bottom: 30px;
+    text-align: center; /* Center align text */
   }
 
   /* Adjust font size for text */
@@ -704,10 +706,12 @@ body
     font-size: 14px;
   }
 }
+
 @media (max-width: 768px) {
-  #professional-skills{
+  #professional-skills {
     margin-top: 370px;
   }
+
   .skill-section {
     flex-direction: column;
     align-items: center;
@@ -724,7 +728,7 @@ body
   .radial-bars .radial-bar {
     width: 100%;
     margin-bottom: 20px; /* Adjust spacing between bars */
-    text-align: left; /* Ensure text aligns to the left */
+    text-align: center; /* Center align text */
   }
 
   .bar .info span {
