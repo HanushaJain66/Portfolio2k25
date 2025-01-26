@@ -1,107 +1,93 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from './Navbar';
-import Aos from 'aos';
-import "aos/dist/aos.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import './skills.css';
+import React, { useState } from "react";
+import "./skills.css"
 
 const Skills = () => {
-  const [activeSection, setActiveSection] = useState('professional');
+  const [showProfessionalSkills, setShowProfessionalSkills] = useState(false);
+  const [showTechnicalSkills, setShowTechnicalSkills] = useState(false);
 
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      }
-    ]
-  };
+  const professionalSkills = [
+    { icon: "bx-briefcase", name: "Project Management" },
+    { icon: "bx-user-check", name: "Team Leadership" },
+    { icon: "bx-bar-chart", name: "Data Analysis" },
+    { icon: "bx-speech", name: "Communication" },
+    { icon: "bx-leadership", name: "Leadership" },
+    { icon: "bx-discussion", name: "Debating" },
+    { icon: "bx-adjust", name: "Adaptability" },
+    { icon: "bx-group", name: "Team Management" },
+    { icon: "bx-presentation", name: "Presentation" },
+  ];
+  
+  const technicalSkills = [
+    { icon: "bx-code", name: "JavaScript" },
+    { icon: "bx-terminal", name: "Python" },
+    { icon: "bx-layer", name: "React" },
+    { icon: "bx-layer", name: "React JS" },
+    { icon: "bx-html5", name: "HTML" },
+    { icon: "bx-css3", name: "CSS" },
+    { icon: "bx-code-block", name: "Next.js" },
+    { icon: "bx-code-curly", name: "Version Control" },
+    { icon: "bx-chip", name: "C++" },
+    { icon: "bx-server", name: "Golang" },
+    { icon: "bx-merge", name: "Express.js" },
+    { icon: "bx-server", name: "Node.js" },
+    { icon: "bx-git", name: "Git" },
+    { icon: "bx-github", name: "GitHub" },
+    { icon: "bx-object", name: "Object-Oriented Programming" },
+    { icon: "bx-database", name: "MongoDB" },
+    { icon: "bx-database", name: "SQL" },
+    { icon: "bx-flask", name: "Flask" },
+    { icon: "bx-math", name: "NumPy" },
+    { icon: "bx-grid", name: "Pandas" },
+  ];
+  
 
   return (
-    <>
-      <Navbar />
-      <div className="skills-container">
-        <h2 className="skills-heading" data-aos="fade-up">
-          My<span> Skills</span>
-        </h2>
-
-        <div className="skills-buttons" data-aos="fade-right">
-          <button
-            onClick={() => setActiveSection('professional')}
-            className={activeSection === 'professional' ? 'active' : ''}
-          >
-            Professional
-          </button>
-          <button
-            onClick={() => setActiveSection('personal')}
-            className={activeSection === 'personal' ? 'active' : ''}
-          >
-            Personal
-          </button>
+    <div className="skills-section">
+       <div className='myskills' data-aos="fade-up">
+          <h2>My <span>Skills</span></h2>
         </div>
 
-        {activeSection === 'professional' && (
-          <Slider {...settings} className="skills-slider">
-            {[
-              { icon: 'bxl-html5', name: 'HTML' },
-              { icon: 'bxl-css3', name: 'CSS' },
-              { icon: 'bxl-javascript', name: 'JavaScript' },
-              { icon: 'bxl-mongodb', name: 'MongoDB' },
-              { icon: 'bxl-react', name: 'React JS' },
-              { icon: 'bxl-nodejs', name: 'Node JS' },
-              { icon: 'bxl-postgresql', name: 'mysql' },
-              { icon: 'bxl-java', name: 'Java' },
-              { icon: 'bxl-c-plus-plus', name: 'C++' },
-              { icon: 'bxl-python', name: 'Python' },
-              { icon: 'bxl-golang', name: 'Golang' },
-              { icon: 'bxl-nextjs', name: 'Next.js' },
-              { icon: 'bxl-git', name: 'Git' },
-              { icon: 'bxl-github', name: 'GitHub' },
-              { icon: 'bxl-version-control', name: 'Version Control' }
-            ].map((skill, index) => (
-              <div className="skill-card" key={index} data-aos="fade-up">
-                <div className="skill-circle">
-                  <i className={`bx ${skill.icon}`}></i>
-                </div>
-                <div className="skill-name">{skill.name}</div>
-              </div>
-            ))}
-          </Slider>
-        )}
 
-        {activeSection === 'personal' && (
-          <Slider {...settings} className="skills-slider">
-            {[
-              { icon: 'bxs-user-voice', name: 'Communication' },
-              { icon: 'bxs-group', name: 'Leadership' },
-              { icon: 'bxs-microphone', name: 'Public Speaking' },
-              { icon: 'bxs-chat', name: 'Debating' }
-            ].map((skill, index) => (
-              <div className="skill-card" key={index} data-aos="fade-up">
-                <div className="skill-circle">
-                  <i className={`bx ${skill.icon}`}></i>
-                </div>
-                <div className="skill-name">{skill.name}</div>
+        <div className="dropdown">
+        <button
+          className="dropdown-button"
+          onClick={() => setShowTechnicalSkills(!showTechnicalSkills)}
+        >
+          Technical Skills
+        </button>
+        <div className={`dropdown-content ${showTechnicalSkills ? "show" : ""}`}>
+          {technicalSkills.map((skill, index) => (
+            <div className="skill-card" key={index} data-aos="fade-up">
+              <div className="skill-circle">
+                <i className={`bx ${skill.icon}`}></i>
               </div>
-            ))}
-          </Slider>
-        )}
+              <p>{skill.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </>
+
+      <div className="dropdown">
+        <button
+          className="dropdown-button"
+          onClick={() => setShowProfessionalSkills(!showProfessionalSkills)}
+        >
+          Professional Skills
+        </button>
+        <div className={`dropdown-content ${showProfessionalSkills ? "show" : ""}`}>
+          {professionalSkills.map((skill, index) => (
+            <div className="skill-card" key={index} data-aos="fade-up">
+              <div className="skill-circle">
+                <i className={`bx ${skill.icon}`}></i>
+              </div>
+              <p>{skill.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+     
+    </div>
   );
 };
 

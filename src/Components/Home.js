@@ -11,6 +11,7 @@ import Contact from './Contact';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Achievements from './Achievements';
+import Certificates from './certificates';
 
 const Home = () => {
   const attributes = ['Developer', 'Coder', 'Traveler']; // Add more attributes as needed
@@ -18,7 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 3000, // Animation duration
+      duration: 1000, // Animation duration
       once: false, // Whether animation should happen only once
     });
 
@@ -57,6 +58,8 @@ const Home = () => {
       <Education />
       <hr className='section-separator' id='project'/>
       <Project />
+      {/* <hr className='section-separator' id='skills'/>
+      <Certificates /> */}
       <hr className='section-separator' id='skills'/>
       <Skills />
       <hr className='section-separator' id='achivements'/>

@@ -9,8 +9,12 @@ body
 {
   color: #ededed;
   background-color: #081b25;
+  font-family: "Plus Jakarta Sans", serif;
+  font-optical-sizing: auto;
+
 
 }
+
 
 #services
 {
