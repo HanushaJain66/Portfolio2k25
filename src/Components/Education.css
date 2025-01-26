@@ -33,7 +33,7 @@
   margin-top: 20px;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 1px 1px 20px #012290f7,1px 1px 40px #0053b87f; /* Added box shadow */
+  box-shadow: 1px 1px 20px #000000f7, 1px 1px 40px #2b415c7f; /* Added box shadow */
   transition: box-shadow 0.3s, transform 0.3s; /* Transition effects */
 }
 

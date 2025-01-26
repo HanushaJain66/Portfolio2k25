@@ -14,7 +14,7 @@ import Achievements from './Achievements';
 import Certificates from './certificates';
 
 const Home = () => {
-  const attributes = ['Developer', 'Coder', 'Traveler']; // Add more attributes as needed
+  const attributes = ['Developer', 'Coder' ]; // Add more attributes as needed
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
